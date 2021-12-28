@@ -1,11 +1,20 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import Loader from './components/Loader/Loader.js';
 import './App.css';
 
 
 function App() {
-  return (
-    <Loader/>
+  const  [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    }, 5000)
+  }, [])
+  return ( 
+    loading ? <Loader/> : <h1>teste</h1>
+  
+    
   );
 }
 
