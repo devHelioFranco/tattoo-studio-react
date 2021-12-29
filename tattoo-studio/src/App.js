@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import Loader from './components/Loader/Loader.js';
+import Header from './components/Header/Header.js'
 import './App.css';
 
 
@@ -9,10 +10,10 @@ function App() {
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    }, 5000)
+    }, 2000)
   }, [])
   return ( 
-    loading ? <Loader/> : <h1>teste</h1>
+    loading ? <Loader/> : <Header/>
   
     
   );
