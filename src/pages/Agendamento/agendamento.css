@@ -1,0 +1,27 @@
+
+
+.agendamento{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'main main main'
+    'footer footer footer' ;
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: 50vh 1fr 1fr;
+
+}
+.item1{
+    grid-area: header;
+    /* background-image: url(../../assets/back.jpg); */
+    height: auto;
+    color: black;
+    /* background: black; */
+    text-align: start;
+    top: 30px;
+
+}
+.item2{
+    grid-area: main;
+    background-image: url(../../assets/back.jpg);
+}
+.item3{grid-area: footer;}
