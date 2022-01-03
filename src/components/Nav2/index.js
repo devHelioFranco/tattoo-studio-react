@@ -13,7 +13,7 @@ const NavBar = ()=>{
     return(
         <>
             <Nav>
-                <NavLink to="/home">
+                <NavLink to="/">
                     <img src={logo}/>
                 </NavLink>
                 <Bars/>
