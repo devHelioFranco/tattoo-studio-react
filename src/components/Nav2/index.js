@@ -21,7 +21,6 @@ const NavBar = ()=>{
                     <NavLink to="/agendamento" activeStyle>Agendamento</NavLink>
                     <NavLink to="/contato" activeStyle>Contato</NavLink>
                     <NavLink to="/tatuadores" activeStyle>Tatuadores</NavLink>
-                    <NavLink to="/contato" activeStyle>Contato</NavLink>
                     <NavLink to="/cadastro" activeStyle>Cadastro</NavLink>
                 </NavMenu>
                 <NavBtn>

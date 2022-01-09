@@ -7,7 +7,7 @@ const Tatuadores = () =>{
         <main>
             <div>
                 <h1 className="titulo">Tatuadores</h1>
-                <ListaTatuadores url={'/tatuadores'} />
+                <ListaTatuadores url={'/Artists'} />
             </div>
         </main>
     )

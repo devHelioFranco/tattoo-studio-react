@@ -22,10 +22,10 @@ useEffect(() => {
                 <Link className={`cartao-post `} to={`/posts/${post.id}`}>
                     <article key={post.id}>
                         <h3 className="cartao-post__titulo">
-                            {post.nome}
+                            {post.name}
                         </h3>
-                        <p className="cartao-post__meta">Descrição: {post.descricao}</p>
-                        <p className="cartao-post__meta">Especialidade: {post.especialidade}</p>
+                        <p className="cartao-post__meta">Descrição: {post.email}</p>
+                        <p className="cartao-post__meta">Especialidade: {post.city}</p>
 
                     </article>
                 </Link>
