@@ -1,0 +1,46 @@
+*{
+    /* width:100% */
+}
+
+.titulo{
+    text-align: center;
+    color: yellow;
+}
+.cartao-post {
+    /* background-color: red; */
+    color: yellow;
+    border-radius: 10px;
+    /* box-shadow: var(--sombra); */
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem 2rem 2rem;
+    box-sizing: border-box;
+    margin-bottom: 4.25rem;
+    border-top: 1px solid;
+}
+
+.cartao-post__titulo {
+    /* font-size: var(--fonte-tamanho-cartao-post-titulo); */
+    font-weight: var(--fonte-peso-cartao);
+    margin-bottom: 1rem;
+}
+
+.cartao-post__meta {
+    line-height: 1.3rem;
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 900px) {
+    .posts {
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

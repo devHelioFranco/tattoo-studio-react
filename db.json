@@ -1,0 +1,40 @@
+{
+    "tatuadores": [
+    {
+        "id": 1,
+        "nome": "Caio",
+        "descricao": "Tatua de tudo",
+        "especialidade": "Faz desenho xicano"
+        
+    },
+    {
+        "id": 2,
+        "nome": "Evelyn",
+        "descricao": "Tatua de tudo",
+        "especialidade": "Faz desenho realista"
+        
+    },
+    {
+        "id": 3,
+        "nome": "Helio",
+        "descricao": "Tatua de tudo",
+        "especialidade": "Faz desenho old scholl"
+        
+    },
+    {
+        "id": 4,
+        "nome": "Hyan",
+        "descricao": "Tatua de tudo",
+        "especialidade": "Faz desenho psicodelicos"
+        
+    },
+    {
+        "id": 5,
+        "nome": "Mariana",
+        "descricao": "Tatua de tudo",
+        "especialidade": "Faz desenho de animais"
+        
+    }
+]
+}
+
