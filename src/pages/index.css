@@ -1,0 +1,9 @@
+#titulo{
+    text-align: justify;
+}
+
+#tattoo{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
