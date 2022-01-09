@@ -1,5 +1,17 @@
 import React from "react";
 import mapa from "../assets/mapa.png"
+import ReactTypingEffect from 'react-typing-effect';
+
+
+const ReactTypingEffectDemo = () => {
+  return (
+    <>
+      <ReactTypingEffect
+        text={["Hello.", "World!"]} speed={100} eraseDelay={50} typingDelay={50} eraseSpeed={100}
+      />
+
+      </>)
+};
 
 const Home = () => {
   return (
@@ -13,6 +25,8 @@ const Home = () => {
         padding: "20px"
       }}
     >
+      <h1><ReactTypingEffectDemo/></h1>
+     
       <h1>Onde estamos</h1>
       <div
         style={{
