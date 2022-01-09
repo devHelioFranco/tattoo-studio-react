@@ -1,11 +1,14 @@
 import React from "react";
 import logo from "../../assets/logo.png"
+import banner from "../../assets/back.jpg"
+import bannerCss from "./bannerCss.css"
+
 import {Nav,
 NavLink,
 Bars,
 NavMenu,
 NavBtn,
-NavBtnLink} from "./NavBar"
+NavBtnLink, Banner} from "./NavBar"
 
 const NavBar = ()=>{
 
@@ -27,6 +30,8 @@ const NavBar = ()=>{
                     <NavBtnLink to="login">Login</NavBtnLink>
                 </NavBtn>
             </Nav>
+            <img src={banner} id="banner" /> 
+            {/* <Banner/> */}
         
         </>
     )

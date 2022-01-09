@@ -1,7 +1,15 @@
 import styled from "styled-components";
 import { NavLink as Link} from "react-router-dom";
 import {FaBars} from "react-icons/fa"
+import background from "../../assets/back.jpg"
 
+export const Banner = styled.div`
+height: 40vh;
+width: 100%;
+background-image: url(${background});
+background-size: cover;
+background-position-x: -100px;
+`
 
 export const Nav = styled.nav`
     background-color: black;
@@ -36,8 +44,8 @@ export const Bars = styled(FaBars)`
         top:0;
         right:0;
         transform: translate(-100%, 75%);
-        font-size: 1.8rem
-        cursor:pointer;
+        font-size: 1.8rem;
+        cursor: pointer;
 
     }
 `
@@ -73,7 +81,9 @@ transition: all 0.2s ease-in-out;
 text-decoration: none;
 
 &:hover{
-    transition; all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: white;
 }
 `
+
+
