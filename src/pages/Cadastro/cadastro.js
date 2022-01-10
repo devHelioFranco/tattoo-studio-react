@@ -1,17 +1,50 @@
 import React from "react";
+import "./cadastro.css"
+import Footer from "../../components/Footer/Footer"
 
-
-// nome: 'Felipe Santos',
-// 				idade: 18,
-//         endereco: 'Rua pedro ivo 123',
-//         cidade: 'Sao Paulo',
-//         cep: 85780000,
-//         email: 'jose@gmail.com',
 
 const cadastro = () => {
     return (
-        <h1>Hello world</h1>
+    <div className="container">
+        <form>
+            <div className="row">
+                <span>Nome</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>Idade</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>Email</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>Senha</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>Endereco</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>Cidade</span>
+                <input type="text"/>
+            </div>
+            <div className="row">
+                <span>CEP</span>
+                <input type="text"/>
+            </div>
+
+            <div className="row">
+            <button>CADASTRA-SE </button>
+            </div>
+        </form>
+        <Footer/>
+        </div>
     )
 }
+
+
 
 export default cadastro;
