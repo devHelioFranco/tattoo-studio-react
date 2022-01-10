@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./agendamento.css";
 import DataTable from "../../components/FormularioAgendamento/DataTable";
 // import {NavBtn, NavBtnLink} from "../../components/Nav2/NavBar"
-import {Button} from "../../components/Button/Button"
+
 
 const Agendamento = () => {
 
@@ -27,11 +27,4 @@ const Agendamento = () => {
 };
 export default Agendamento;
 
-// style={{
-//     display: 'flex',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     height: '90vw',
-//     background: 'black',
-//     color: 'white'
-// }}>
+

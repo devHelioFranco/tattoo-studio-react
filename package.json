@@ -16,7 +16,8 @@
     "react-scripts": "^3.0.1",
     "react-typing-effect": "^2.0.5",
     "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "proxy": "http://localhost:3000/"
   },
   "scripts": {
     "start": "react-scripts start",
