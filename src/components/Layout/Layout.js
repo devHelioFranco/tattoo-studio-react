@@ -5,7 +5,7 @@ import NavBar from "../Nav2"
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Home from "../../pages"
 import Agendamento from "../../pages/Agendamento/agendamento"
-import Cadastro from "../../pages/Cadastro/cadastro"
+
 import Footer from "../Footer/Footer"
 
 const Layout = () => {
@@ -16,7 +16,7 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/agendamento" element={<Agendamento />} />
-          <Route path="/cadastro" element={<Cadastro/>} />
+          
         </Routes>
         <Footer />
       </Router>

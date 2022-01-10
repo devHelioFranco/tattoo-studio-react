@@ -16,6 +16,13 @@
     
 }
 
+.container form h2{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    color: yellow;
+}
+
 .container form .row {
     display: flex;
     flex-direction: column;

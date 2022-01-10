@@ -7,6 +7,7 @@ const cadastro = () => {
     return (
     <div className="container">
         <form>
+        <h2>Cadastro de usuario</h2>
             <div className="row">
                 <span>Nome</span>
                 <input type="text"/>
