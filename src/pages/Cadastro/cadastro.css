@@ -48,12 +48,12 @@
 }
 
 .container form .row button{
-    flex:1;
-    height: 40px;
+    width: 100%;
     background: yellow;
     color: black;
     font-size:18px;
     border-radius: 5px;
+    margin:auto;
 }
 
 .container form .row button:hover{

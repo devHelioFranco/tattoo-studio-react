@@ -1,6 +1,6 @@
 import React, { useState, } from "react";
 import "./cadastro.css";
-
+import api from "../../api/api"
 
 function Cadastro() {
     
@@ -16,7 +16,9 @@ function Cadastro() {
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(usuario)
+        api.post('/users', usuario).then(response =>{
+            console.log(response)
+        });
     }
 
     return (
@@ -27,32 +29,32 @@ function Cadastro() {
         
             <div className="row">
                 <span>Nome</span>
-                <input type="text" name="Nome" onChange={handlechange}/>
+                <input type="text" name="nome" onChange={handlechange}/>
             </div>
             
             <div className="row">
                 <span>Idade</span>
-                <input type="text" name="Idade" onChange={handlechange}/>
+                <input type="text" name="idade" onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>Email</span>
-                <input type="text"  name="Email" onChange={handlechange}/>
+                <input type="text"  name="email" onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>Senha</span>
-                <input type="password"  name="Senha" onChange={handlechange}/>
+                <input type="password"  name="senha" onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>Endereço</span>
-                <input type="text"  name="Endereço" onChange={handlechange}/>
+                <input type="text"  name="endereco" onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>Cidade</span>
-                <input type="text" name="Cidade" onChange={handlechange}/>
+                <input type="text" name="cidade" onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>CEP</span>
-                <input type="text"  name="CEP" onChange={handlechange}/>
+                <input type="text"  name="cep" onChange={handlechange}/>
             </div>
 
             <div className="row">
