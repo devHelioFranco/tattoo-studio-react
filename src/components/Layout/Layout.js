@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Home from "../../pages"
 import Agendamento from "../../pages/Agendamento/agendamento"
 import Tatuadores from '../../pages/Tatuadores/Tatuadores'
+import  Cadastro from "../../pages/Cadastro/cadastro"
 import Footer from "../Footer/Footer"
 
 const Layout = () => {
@@ -17,6 +18,7 @@ const Layout = () => {
           <Route path="/" element={<Home />} />
           <Route path="/agendamento" element={<Agendamento />} />
           <Route path='/tatuadores' element={ <Tatuadores /> } />
+          <Route path='/Cadastro' element={ <Cadastro/> } />
         </Routes>
         <Footer />
       </Router>
