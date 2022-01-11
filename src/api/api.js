@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'http://localhost:3001'
 })
 
 export const busca = async(url, setDado) =>{
@@ -9,3 +9,5 @@ export const busca = async(url, setDado) =>{
     setDado(resposta.data)
 }
 
+
+export default api;
