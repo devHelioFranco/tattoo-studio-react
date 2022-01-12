@@ -1,8 +1,8 @@
 import React from 'react';
 import Caio from '../../assets/caio.jpeg';
-import Evelyn from '../../assets/evelyn.jpg';
-import Helio from '../../assets/helio.jpg';
-import Hyan from '../../assets/hyan.jpg';
+import Evelyn from '../../assets/evelyn.jpeg';
+import Helio from '../../assets/helio.jpeg';
+import Hyan from '../../assets/hyan.jpeg';
 import Mariana from '../../assets/mariana.jpg';
 import style from './style.css';
 
