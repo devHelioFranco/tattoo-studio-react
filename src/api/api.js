@@ -9,3 +9,5 @@ export const busca = async(url, setDado) =>{
     setDado(resposta.data)
 }
 
+
+export default api;
