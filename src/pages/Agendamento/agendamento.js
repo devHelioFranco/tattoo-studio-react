@@ -19,8 +19,8 @@ const Agendamento = () => {
           <DataTable url={'/Agendamento'}/>
       </div>
       <div className="item2">
-        <h1>Faca aqui um agendamento</h1>
-        <Button>Agende aqui seu horario</Button>
+        {/* <h1>Faca aqui um agendamento</h1>
+        <Button>Agende aqui seu horario</Button> */}
       </div>
       <div className="item3">
         {/* <h1>Agendamento</h1> */}
