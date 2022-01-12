@@ -42,18 +42,16 @@ function Cadastro() {
     return (
         <>
         <Formik
-        onSubmit={onSubmit}
+
         validateOnMount
         initialValues={{
           cep: '',
           logradouro: '',
           cidade: '',
         }}
-        
-            {/* <div className="container"> */}
-                       
+                      
             render={({ isValid, setFieldValue }) => (
-          
+                <div className="container">
             <form  onSubmit = {handleSubmit}>
             <h2>Cadastro de usuario</h2>
         
@@ -81,7 +79,7 @@ function Cadastro() {
 
             <div className="row">
                 <span>Endereço</span>
-                <input type="text"  name="endereco" onChange={handlechange}/>
+                <input type="text"  name="logradouro"  onChange={handlechange}/>
             </div>
             <div className="row">
                 <span>Cidade</span>
@@ -92,9 +90,11 @@ function Cadastro() {
             <button disabled={!isValid}>CADASTRA-SE </button>
             </div>
             </form>
+            </div>
             )}
             
-            // </div>
+             
+            />
           </>
     )
     
