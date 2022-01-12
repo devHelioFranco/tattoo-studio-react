@@ -4,13 +4,13 @@ import Evelyn from '../../assets/evelyn.jpeg';
 import Helio from '../../assets/helio.jpeg';
 import Hyan from '../../assets/hyan.jpeg';
 import Mariana from '../../assets/mariana.jpg';
-import style from './style.css';
+import  './contato.css';
 
 
 const Contato = () =>{
     return(
         <section className="grid">
-            <div>
+            <div className='tatuadores'>
                 <h1 className='tituloGrid'>Caio</h1>
                 <img
                     src={Caio}
@@ -25,7 +25,7 @@ const Contato = () =>{
                     src={Evelyn}
                     className='cardImagem'
                     />
-                <h3><a href='#'>Linkdin</a></h3>
+                <h3><a href='https://www.linkedin.com/in/evelynbalves/'>Linkdin</a></h3>
                 <h3><a href='#'>Github</a></h3>        
             </div>
             <div className='card'>

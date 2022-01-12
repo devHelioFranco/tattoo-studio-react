@@ -7,7 +7,9 @@ import Home from "../../pages"
 import Agendamento from "../../pages/Agendamento/agendamento"
 import Contato from '../../pages/Contato/Contato.jsx';
 import Tatuadores from '../../pages/Tatuadores/Tatuadores'
+import Contato from '../../pages/Contato/Contato.jsx'
 import  Cadastro from "../../pages/Cadastro/cadastro"
+import Login from "../../pages/Login/login"
 import Footer from "../Footer/Footer"
 
 const Layout = () => {
@@ -17,10 +19,15 @@ const Layout = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+
+          <Route path='/contato' element={<Contato />} />
+
           <Route path="/contato" element={<Contato />} />
+
           <Route path="/agendamento" element={<Agendamento />} />
           <Route path='/tatuadores' element={ <Tatuadores /> } />
           <Route path='/Cadastro' element={ <Cadastro/> } />
+          <Route path='/Login' element={ <Login /> } />
         </Routes>
         <Footer />
       </Router>
