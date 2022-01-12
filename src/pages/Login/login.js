@@ -7,7 +7,7 @@ function Login() {
     const [usuario, setUsuario ] = useState({});
 
     function handlechange(e){
-        
+       
         setUsuario({
             ...usuario,
             [e.target.name]: e.target.value,
@@ -16,6 +16,7 @@ function Login() {
 
     function handleSubmit(e){
         e.preventDefault();
+        localStorage.setItem('email', usuario.Email)
         console.log(usuario)
     }
 
