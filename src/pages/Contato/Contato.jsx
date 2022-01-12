@@ -4,7 +4,7 @@ import Evelyn from '../../assets/evelyn.jpeg';
 import Helio from '../../assets/helio.jpeg';
 import Hyan from '../../assets/hyan.jpeg';
 import Mariana from '../../assets/mariana.jpg';
-import style from './style.css';
+import  './contato.css';
 
 
 const Contato = () =>{
