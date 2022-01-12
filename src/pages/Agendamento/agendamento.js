@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./agendamento.css";
 import DataTable from "../../components/FormularioAgendamento/DataTable";
 // import {NavBtn, NavBtnLink} from "../../components/Nav2/NavBar"
- 
-// import {Button} from "../../components/Button/Button"
-
+import {Button} from "../../components/Button/Button"
 
 const Agendamento = () => {
 
@@ -16,11 +14,10 @@ const Agendamento = () => {
           {/* <NavBtn>
             <NavBtnLink to="login">Agendar horario</NavBtnLink>
           </NavBtn> */}
-          <DataTable url={'/Agendamento'}/>
+          <DataTable />
       </div>
       <div className="item2">
-        {/* <h1>Faca aqui um agendamento</h1>
-        <Button>Agende aqui seu horario</Button> */}
+        {/* <h1>Agendamento</h1> */}
       </div>
       <div className="item3">
         {/* <h1>Agendamento</h1> */}
@@ -30,4 +27,11 @@ const Agendamento = () => {
 };
 export default Agendamento;
 
-
+// style={{
+//     display: 'flex',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     height: '90vw',
+//     background: 'black',
+//     color: 'white'
+// }}>
