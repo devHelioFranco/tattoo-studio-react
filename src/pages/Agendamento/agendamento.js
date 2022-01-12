@@ -2,8 +2,8 @@ import React from "react";
 import "./agendamento.css";
 import DataTable from "../../components/FormularioAgendamento/DataTable";
 // import {NavBtn, NavBtnLink} from "../../components/Nav2/NavBar"
-
-import {Button} from "../../components/Button/Button"
+ 
+// import {Button} from "../../components/Button/Button"
 
 
 const Agendamento = () => {
