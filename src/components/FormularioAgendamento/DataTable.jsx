@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import {Button} from "../Button/Button"
 import "./DataTable.css"
-import {busca} from '../../services/api'
-const cors = require('cors')
+import {busca, removeItem, agendaItem} from '../../services/api'
+import axios from "axios";
+import moment from "moment";
+
 
 const Datatable = ({url}) =>{
 
@@ -10,6 +12,8 @@ const Datatable = ({url}) =>{
 
   useEffect(()=>{
     busca(url, setAgendamentos)
+    removeItem(url)
+    // agendaItem(url)
 
 
 },[])
@@ -19,28 +23,39 @@ const Datatable = ({url}) =>{
     
 
     <section className="agendamento">
-                    {
-                      agendamentos.map((post) => (
+      {                      console.log(agendamentos)}
+                    
                         <table className="table-agendamento" cellPadding={0} cellSpacing={0} border="1px solid">
                           <thead>
                             <tr>
                               <th>Data</th>
                               <th>Tatuador</th>
-                              <th>Status</th>
-                              <th>Alterar</th>
+                              {/* <th>Status</th> */}
+                              <th>Cancelar</th>
+                              <th>Agendar</th>
                             </tr>
                           </thead>
                           <tbody>
+                          {
+
+agendamentos.map((post) => (
                               <tr>            
-                                  <th>21/01/22{post.data}</th>
+                                  {/* <th>{new Intl.DateTimeFormat("en-GB",{
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "2-digit"
+                                  }).format(post.data)}</th> */}
+                                  <th>{moment(post.data).format('DD/MM/YYYY')}</th>
                                   <th>Caio C</th>
-                                  <th>Agendado</th>
-                                  <th><Button>Cancelar</Button></th>
+                                  {/* <th>{post.status}</th> */}
+                                  <th><Button onClick={()=>removeItem(`/agendamento/${post.id}`)}>Cancelar</Button></th>
+                                  <th><Button>Agendar</Button></th>
                               </tr>
+                                                ))
+                                              }
                           </tbody>
                         </table>
-                  ))
-                  }
+
     </section>
   )
 }

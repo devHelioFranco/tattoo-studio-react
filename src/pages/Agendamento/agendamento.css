@@ -22,6 +22,10 @@
 }
 .item2{
     grid-area: main;
-    background-image: url(../../assets/back.jpg);
+
+    height: auto;
+    top: 30px;
+    padding: 70px;
+    align-items: flex-start;
 }
 .item3{grid-area: footer;}

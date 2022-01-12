@@ -3,6 +3,8 @@ import "./agendamento.css";
 import DataTable from "../../components/FormularioAgendamento/DataTable";
 // import {NavBtn, NavBtnLink} from "../../components/Nav2/NavBar"
 
+import {Button} from "../../components/Button/Button"
+
 
 const Agendamento = () => {
 
@@ -14,10 +16,11 @@ const Agendamento = () => {
           {/* <NavBtn>
             <NavBtnLink to="login">Agendar horario</NavBtnLink>
           </NavBtn> */}
-          <DataTable />
+          <DataTable url={'/Agendamento'}/>
       </div>
       <div className="item2">
-        {/* <h1>Agendamento</h1> */}
+        <h1>Faca aqui um agendamento</h1>
+        <Button>Agende aqui seu horario</Button>
       </div>
       <div className="item3">
         {/* <h1>Agendamento</h1> */}

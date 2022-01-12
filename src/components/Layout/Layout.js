@@ -8,7 +8,15 @@ import Agendamento from "../../pages/Agendamento/agendamento"
 import Tatuadores from '../../pages/Tatuadores/Tatuadores'
 import Footer from "../Footer/Footer"
 
+// import useToken from "../../useToken"
+
 const Layout = () => {
+
+  // const { token, setToken } = useToken();
+
+  // if(!token) {
+  //   return <Login setToken={setToken} />
+  // }
   return (
     <div>
       <Router>
@@ -17,6 +25,7 @@ const Layout = () => {
           <Route path="/" element={<Home />} />
           <Route path="/agendamento" element={<Agendamento />} />
           <Route path='/tatuadores' element={ <Tatuadores /> } />
+          {/* <Route path='/login' element={ <Login /> } /> */}
         </Routes>
         <Footer />
       </Router>
