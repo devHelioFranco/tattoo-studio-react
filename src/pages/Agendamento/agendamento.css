@@ -7,32 +7,21 @@
     'footer footer footer' ;
     text-align: center;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    height: 1vh;
-
+    grid-template-rows: 50vh 1fr 1fr;
 
 }
 .item1{
     grid-area: header;
     /* background-image: url(../../assets/back.jpg); */
     height: auto;
-    color: white;
+    color: black;
     /* background: black; */
     text-align: start;
     top: 30px;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-top: 50px;
-    height: auto;
-
 
 }
 .item2{
     grid-area: main;
-
-    height: auto;
-    top: 30px;
-    padding: 70px;
-    align-items: flex-start;
+    background-image: url(../../assets/back.jpg);
 }
-/* .item3{grid-area: footer;} */
+.item3{grid-area: footer;}
