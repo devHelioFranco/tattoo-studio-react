@@ -3,7 +3,7 @@ import Caio from '../../assets/caio.jpeg';
 import Evelyn from '../../assets/evelyn.jpeg';
 import Helio from '../../assets/helio.jpeg';
 import Hyan from '../../assets/hyan.jpeg';
-import Mariana from '../../assets/mariana.jpg';
+import Mariana from '../../assets/mariana.jpeg';
 import  './contato.css';
 
 
