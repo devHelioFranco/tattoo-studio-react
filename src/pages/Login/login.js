@@ -52,7 +52,7 @@ function Login({url}) {
     <div className="container">
         <form  onSubmit = {handleSubmit}>
         
-        <h2>Login</h2>
+        <h2 style={{textAlign: 'center'}}>Login</h2>
         
             <div className="row">
                 <span>Email</span>
@@ -64,32 +64,31 @@ function Login({url}) {
             </div>
 
             <div className="row">
-            <button>Logarrrr</button>
+            <button>Login</button>
             </div>
         </form>
         
         </div>
     )
+    }
 
-import React from 'react';
 
+// export default function Login({ setToken }) {
+//   return(
+//     <form>
+//       <label>
+//         <p>Username</p>
+//         <input type="text" />
+//       </label>
+//       <label>
+//         <p>Password</p>
+//         <input type="password" />
+//       </label>
+//       <div>
+//         <button type="submit">Submit</button>
+//       </div>
+//     </form>
+//   )
 
-export default function Login({ setToken }) {
-  return(
-    <form>
-      <label>
-        <p>Username</p>
-        <input type="text" />
-      </label>
-      <label>
-        <p>Password</p>
-        <input type="password" />
-      </label>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  )
-
-}
+// }
 

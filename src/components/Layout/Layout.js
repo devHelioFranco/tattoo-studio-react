@@ -10,6 +10,7 @@ import Tatuadores from '../../pages/Tatuadores/Tatuadores'
 import  Cadastro from "../../pages/Cadastro/cadastro"
 import Login from "../../pages/Login/login"
 import Footer from "../Footer/Footer"
+import Contato from "../../pages/Contato/Contato"
 
 const Layout = () => {
   return (
