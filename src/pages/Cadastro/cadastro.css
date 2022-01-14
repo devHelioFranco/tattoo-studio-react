@@ -47,6 +47,14 @@
     font-size:15px;
 }
 
+.container form .row select{
+    height:25px;
+    width: 100%;
+    outline: none;
+    padding:10px;
+    font-size:15px;
+}
+
 .container form .row button{
     width: 100%;
     background: yellow;
