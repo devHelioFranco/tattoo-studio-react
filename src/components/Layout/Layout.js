@@ -5,7 +5,7 @@ import NavBar from "../Nav2"
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Home from "../../pages"
 import Agendamento from "../../pages/Agendamento/agendamento"
-import Contato from '../../pages/Contato/Contato.jsx';
+// import Contato from '../../pages/Contato/Contato.jsx';
 import Tatuadores from '../../pages/Tatuadores/Tatuadores'
 import  Cadastro from "../../pages/Cadastro/cadastro"
 import Login from "../../pages/Login/login"

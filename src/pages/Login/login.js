@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {  useNavigate } from "react-router-dom";
 import "./login.css";
@@ -69,6 +70,26 @@ function Login({url}) {
         
         </div>
     )
+
+import React from 'react';
+
+
+export default function Login({ setToken }) {
+  return(
+    <form>
+      <label>
+        <p>Username</p>
+        <input type="text" />
+      </label>
+      <label>
+        <p>Password</p>
+        <input type="password" />
+      </label>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  )
+
 }
 
-export default Login;
