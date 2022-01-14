@@ -43,7 +43,7 @@ function Cadastro() {
         api.post("/users", dados).then((response) => {
     });
         console.log(values)
-        alert("usuario cadastrado com sucesso!")
+
        }}
       >
         {({

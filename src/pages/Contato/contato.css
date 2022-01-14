@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(5, 200px);
+    gap: 20px;
+    /* margin-bottom: 120px; */
+    margin: top 20px;
+  
+    text-align: center;
+  }
+  
+  h1{
+    color:yellow
+  }
+
+
+  .tituloGrid {
+    text-align: center;
+    grid-column: 1/ -1;
+  
+  }
+
+ 
+.cardImagem {
+  object-fit: cover;
+  max-width: 100%;
+  width: 250px;
+  max-height: 100%;
+  height: 250px;
+
+}
+.tatuadores{
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.card{
+  padding-top: 30px;
+}
+.card a,
+.tatuadores a
+{
+  color: yellow;
+  text-decoration: none;
+  padding-top: 15px;
+
+}
