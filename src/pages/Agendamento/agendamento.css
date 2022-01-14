@@ -36,3 +36,6 @@
     align-items: flex-start;
 }
 /* .item3{grid-area: footer;} */
+.show{
+    display: block !important;
+  }

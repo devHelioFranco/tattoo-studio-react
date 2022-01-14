@@ -4,16 +4,30 @@ import "./DataTable.css"
 import {busca, removeItem, agendaItem} from '../../services/api'
 import axios from "axios";
 import moment from "moment";
+import Modal from "../../components/Modal/Modal"
 
 
 const Datatable = ({url}) =>{
+  // const [dropdown, setDropdown] = useState("");
+  // const showDropdown = () => {
+  //   console.log("show");
+  //   //se clicar no botão, modal aparece
+  //   setDropdown("show");
+  //   document.body.addEventListener("click", closeDropdown);
+  // }
+
+  // const closeDropdown = event => {
+  //   console.log("hidden");
+  //   setDropdown("");
+  //   document.body.removeEventListener("click", closeDropdown);
+  // };
 
   const [agendamentos, setAgendamentos] = useState([])
 
   useEffect(()=>{
     busca(url, setAgendamentos)
     removeItem(url)
-    // agendaItem(url)
+    agendaItem(url)
 
 
 },[])
@@ -48,13 +62,16 @@ agendamentos.map((post) => (
                                   <th>{moment(post.data).format('DD/MM/YYYY')}</th>
                                   <th>Caio C</th>
                                   {/* <th>{post.status}</th> */}
+                                  
                                   <th><Button onClick={()=>removeItem(`/agendamento/${post.id}`)}>Cancelar</Button></th>
-                                  <th><Button>Agendar</Button></th>
+                                  <th><Button onClick={()=>agendaItem(`agendamento/`)}>Agendar</Button></th>
+                                 
                               </tr>
                                                 ))
                                               }
                           </tbody>
                         </table>
+
 
     </section>
   )
