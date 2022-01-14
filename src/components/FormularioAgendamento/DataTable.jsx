@@ -26,11 +26,13 @@ const Datatable = ({url}) =>{
 
   useEffect(()=>{
     busca(url, setAgendamentos)
-    removeItem(url)
-    agendaItem(url)
+    // removeItem(url)
+    // agendaItem(url)
 
 
 },[])
+ var userId = localStorage.getItem('id')
+
 
     return (
     //   usar um GET para puxar os agendamentos 
@@ -45,14 +47,14 @@ const Datatable = ({url}) =>{
                               <th>Data</th>
                               <th>Tatuador</th>
                               {/* <th>Status</th> */}
-                              <th>Cancelar</th>
-                              <th>Agendar</th>
+                              {/* {/* <th>Cancelar</th> */}
+                              <th>Alterar</th>
                             </tr>
                           </thead>
                           <tbody>
                           {
 
-agendamentos.map((post) => (
+agendamentos.filter((element)=> element.user_id == userId).map((post) => (
                               <tr>            
                                   {/* <th>{new Intl.DateTimeFormat("en-GB",{
                                     year: "numeric",
@@ -62,9 +64,10 @@ agendamentos.map((post) => (
                                   <th>{moment(post.data).format('DD/MM/YYYY')}</th>
                                   <th>Caio C</th>
                                   {/* <th>{post.status}</th> */}
+                                  <th>{post.status === true ? <Button onClick={()=>removeItem(`/agendamento/${post.id}`)}>Cancelar</Button> : <Button onClick={()=>agendaItem(`agendamento/`)}>Agendar</Button>}</th>
                                   
-                                  <th><Button onClick={()=>removeItem(`/agendamento/${post.id}`)}>Cancelar</Button></th>
-                                  <th><Button onClick={()=>agendaItem(`agendamento/`)}>Agendar</Button></th>
+                                  {/* <th><Button onClick={()=>removeItem(`/agendamento/${post.id}`)}>Cancelar</Button></th>
+                                  <th><Button onClick={()=>agendaItem(`agendamento/`)}>Agendar</Button></th> */}
                                  
                               </tr>
                                                 ))
